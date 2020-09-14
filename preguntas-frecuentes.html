@@ -1,0 +1,81 @@
+<!DOCTYPE html  >
+<html>
+  <head>
+    <title>Pug</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"/>
+    <link href="src/css/main.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;600&amp;family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <header class="header">
+      <div class="p-8 flex flex-column justify-between max-w-screen-xl m-auto"><a href="/"><img src="./src/images/logo.svg" alt=""/></a>
+        <div class="button button--dark text-white rounded-full text-center py-2 px-5 lg:px-10 md:px-8">Redime tu premio</div>
+      </div>
+    </header>
+    <main class="flex-grow">
+      <div class="lg:max-w-xl m-auto preguntas p-8">
+        <h3 class="text-blue-100 text-xl pb-6">Preguntas frecuentes</h3>
+        <div class="search">
+          <input class="rounded-full shadow-md" type="text" placeholder="Iniciar búsqueda"/>
+          <button class="rounded-full" type="submit"><img src="src/images/search.svg" alt=""/></button>
+        </div>
+        <div class="accordion mb-20">
+          <div class="accordion__item px-10 py-5 rounded-lg bg-white">
+            <p class="accordion__title">Pregunta 1</p>
+            <p class="hidden pt-5 text-sm"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <button class="rounded-full accordion__button"><img src="src/images/arrow-white.svg" alt=""/></button>
+          </div>
+          <div class="accordion__item px-10 py-5 rounded-lg bg-white">
+            <p class="accordion__title">Pregunta 1</p>
+            <p class="hidden pt-5 text-sm"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <button class="rounded-full accordion__button"><img src="src/images/arrow-white.svg" alt=""/></button>
+          </div>
+          <div class="accordion__item px-10 py-5 rounded-lg bg-white">
+            <p class="accordion__title">Pregunta 1</p>
+            <p class="hidden pt-5 text-sm"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <button class="rounded-full accordion__button"><img src="src/images/arrow-white.svg" alt=""/></button>
+          </div>
+          <div class="accordion__item px-10 py-5 rounded-lg bg-white">
+            <p class="accordion__title">Pregunta 1</p>
+            <p class="hidden pt-5 text-sm"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <button class="rounded-full accordion__button"><img src="src/images/arrow-white.svg" alt=""/></button>
+          </div>
+          <div class="accordion__item px-10 py-5 rounded-lg bg-white">
+            <p class="accordion__title">Pregunta 1</p>
+            <p class="hidden pt-5 text-sm"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <button class="rounded-full accordion__button"><img src="src/images/arrow-white.svg" alt=""/></button>
+          </div>
+          <div class="accordion__item px-10 py-5 rounded-lg bg-white">
+            <p class="accordion__title">Pregunta 1</p>
+            <p class="hidden pt-5 text-sm"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <button class="rounded-full accordion__button"><img src="src/images/arrow-white.svg" alt=""/></button>
+          </div>
+        </div>
+      </div>
+    </main><img class="footer__detail" src="src/images/footer-detail.svg" alt=""/>
+    <footer class="bg-blue-200">
+      <div class="max-w-screen-xl m-auto footer">
+        <ul class="footer__nav text-center lg:flex lg:justify-between lg:px-20">
+          <li><a href="">Inicio</a></li>
+          <li><a href="">¿Cómo ganar?</a></li>
+          <li><a href="">Redime tu premio</a></li>
+          <li><a href="">Preguntas frecuentes </a></li>
+          <li><a href="">Términos y condiciones</a></li>
+          <li><a href="">Contacto</a></li>
+        </ul>
+        <div class="footer__logos lg:flex justify-evenly">
+          <ul class="footer__social">
+            <li><a href=""><img src="src/images/facebook.svg" alt=""/></a></li>
+            <li><a href=""><img src="src/images/twitter.svg" alt=""/></a></li>
+            <li><a href=""><img src="src/images/instagram.svg" alt=""/></a></li>
+          </ul>
+          <ul class="footer__brands">
+            <li><a href=""><img src="src/images/master-card.svg" alt=""/></a></li>
+            <li><a href=""><img src="src/images/footer-bdp.svg" alt=""/></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script-dist.js"></script>
+  </body>
+</html>

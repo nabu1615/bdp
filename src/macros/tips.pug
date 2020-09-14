@@ -1,0 +1,25 @@
+img(src="./src/images/border-detail-dark.svg").tips__top.w-full
+.tips(class="px-8 md:px-10 py-2 relative")
+    h2.text-4xl.text-white.text-center.mb-12 Descubre estos tips
+    div(class="max-w-screen-xl m-auto tips__glide lg:pb-10")
+        div(data-glide-el="track" class="glide__track")
+            .glide__slides
+                include tips-item.pug
+                include tips-item.pug
+                include tips-item.pug
+                include tips-item.pug
+                include tips-item.pug
+                include tips-item.pug
+            .controls.absolute.w-full
+                .glide__arrows(data-glide-el="controls")
+                    button(class="glide__arrow glide__arrow--prev" data-glide-dir="<")
+                    button(class="glide__arrow glide__arrow--next" data-glide-dir=">")
+                .glide__bullets(data-glide-el="controls[nav]")
+                    button(class="glide__bullet bg-gray-500 rounded-full w-3 h-3 mx-1 hover:bg-blue-300" data-glide-dir="=0")
+                    button(class="glide__bullet bg-gray-500 rounded-full w-3 h-3 mx-1 hover:bg-blue-300" data-glide-dir="=1")
+                    button(class="glide__bullet bg-gray-500 rounded-full w-3 h-3 mx-1 hover:bg-blue-300" data-glide-dir="=2")
+                    button(class="glide__bullet bg-gray-500 rounded-full w-3 h-3 mx-1 hover:bg-blue-300" data-glide-dir="=3")
+                    button(class="glide__bullet bg-gray-500 rounded-full w-3 h-3 mx-1 hover:bg-blue-300" data-glide-dir="=4")
+                    button(class="glide__bullet bg-gray-500 rounded-full w-3 h-3 mx-1 hover:bg-blue-300" data-glide-dir="=5")
+img(src="./src/images/border-detail-dark-bottom.svg").tips__bottom.w-full
+        

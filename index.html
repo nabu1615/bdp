@@ -1,0 +1,144 @@
+<!DOCTYPE html  >
+<html>
+  <head>
+    <title>Pug</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"/>
+    <link href="src/css/main.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;600&amp;family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <header class="header">
+      <div class="p-8 flex flex-column justify-between max-w-screen-xl m-auto"><a href="/"><img src="./src/images/logo.svg" alt=""/></a>
+        <div class="button button--dark text-white rounded-full text-center py-2 px-5 lg:px-10 md:px-8">Redime tu premio</div>
+      </div>
+    </header>
+    <main class="flex-grow">
+      <div class="banner__wrapper lg:flex max-w-screen-xl m-auto lg:mb-20">
+        <div class="banner relative lg:w-3/5">
+          <picture>
+            <source srcset="/src/images/banner-lg-home.jpg" media="(min-width: 600px)"/><img class="w-full" src="./src/images/banner-sm-home.jpg" alt=""/>
+          </picture>
+          <div class="logo inline-block absolute rounded-lg"><img src="./src/images/pacific.svg" alt=""/></div>
+        </div>
+        <div class="banner__content my-24 px-8 md:px-10 lg:w-2/5">
+          <h1 class="text-4xl mb-10 leading-10">Gana con tu Mastercard PacifiCard Débito</h1>
+          <div class="w-11/12">
+            <p class="font-light mb-6">¡Prepárate para convertir todas tus compras online y en apps en premios, con tu tarjeta Mastercard PacifiCard Débito!</p>
+            <p class="text-blue-1">p00 ¡A un clic de lo que quieres, a un clic de ganar!</p>
+          </div>
+          <div class="button button--dark text-white rounded-full text-center py-2 px-10 lg:px-10 md:px-8 inline-block mt-10">¿Cómo ganar?</div>
+        </div>
+      </div><img class="tips__top w-full" src="./src/images/border-detail-dark.svg"/>
+      <div class="tips px-8 md:px-10 py-2 relative">
+        <h2 class="text-4xl text-white text-center mb-12">Descubre estos tips</h2>
+        <div class="max-w-screen-xl m-auto tips__glide lg:pb-10">
+          <div class="glide__track" data-glide-el="track">
+            <div class="glide__slides">
+              <div class="tips__slider rounded-lg glide__slide">
+                <div class="top bg-blue-200 py-8"><img class="tips__icon pb-5" src="./src/images/icon-example.svg" alt=""/>
+                  <div class="title text-white text-secondary text-xl text-center leading-6">¿Conoces el pago <br> sin contacto?</div>
+                </div>
+                <div class="bottom bg-white pt-5 px-8 pb-24">
+                  <p class="font-light text-center text-sm"><strong>Paga más rápido, fácil y seguro. </strong> Para hacerlo solo debes acercar tu tarjeta al datáfono y ¡listo! Y lo mejor es lo puedes hacer tú mismo, no es necesario que le entregues tu tarjeta a nadie, lo que hace este proceso mucho más seguro.</p>
+                </div>
+              </div>
+              <div class="tips__slider rounded-lg glide__slide">
+                <div class="top bg-blue-200 py-8"><img class="tips__icon pb-5" src="./src/images/icon-example.svg" alt=""/>
+                  <div class="title text-white text-secondary text-xl text-center leading-6">¿Conoces el pago <br> sin contacto?</div>
+                </div>
+                <div class="bottom bg-white pt-5 px-8 pb-24">
+                  <p class="font-light text-center text-sm"><strong>Paga más rápido, fácil y seguro. </strong> Para hacerlo solo debes acercar tu tarjeta al datáfono y ¡listo! Y lo mejor es lo puedes hacer tú mismo, no es necesario que le entregues tu tarjeta a nadie, lo que hace este proceso mucho más seguro.</p>
+                </div>
+              </div>
+              <div class="tips__slider rounded-lg glide__slide">
+                <div class="top bg-blue-200 py-8"><img class="tips__icon pb-5" src="./src/images/icon-example.svg" alt=""/>
+                  <div class="title text-white text-secondary text-xl text-center leading-6">¿Conoces el pago <br> sin contacto?</div>
+                </div>
+                <div class="bottom bg-white pt-5 px-8 pb-24">
+                  <p class="font-light text-center text-sm"><strong>Paga más rápido, fácil y seguro. </strong> Para hacerlo solo debes acercar tu tarjeta al datáfono y ¡listo! Y lo mejor es lo puedes hacer tú mismo, no es necesario que le entregues tu tarjeta a nadie, lo que hace este proceso mucho más seguro.</p>
+                </div>
+              </div>
+              <div class="tips__slider rounded-lg glide__slide">
+                <div class="top bg-blue-200 py-8"><img class="tips__icon pb-5" src="./src/images/icon-example.svg" alt=""/>
+                  <div class="title text-white text-secondary text-xl text-center leading-6">¿Conoces el pago <br> sin contacto?</div>
+                </div>
+                <div class="bottom bg-white pt-5 px-8 pb-24">
+                  <p class="font-light text-center text-sm"><strong>Paga más rápido, fácil y seguro. </strong> Para hacerlo solo debes acercar tu tarjeta al datáfono y ¡listo! Y lo mejor es lo puedes hacer tú mismo, no es necesario que le entregues tu tarjeta a nadie, lo que hace este proceso mucho más seguro.</p>
+                </div>
+              </div>
+              <div class="tips__slider rounded-lg glide__slide">
+                <div class="top bg-blue-200 py-8"><img class="tips__icon pb-5" src="./src/images/icon-example.svg" alt=""/>
+                  <div class="title text-white text-secondary text-xl text-center leading-6">¿Conoces el pago <br> sin contacto?</div>
+                </div>
+                <div class="bottom bg-white pt-5 px-8 pb-24">
+                  <p class="font-light text-center text-sm"><strong>Paga más rápido, fácil y seguro. </strong> Para hacerlo solo debes acercar tu tarjeta al datáfono y ¡listo! Y lo mejor es lo puedes hacer tú mismo, no es necesario que le entregues tu tarjeta a nadie, lo que hace este proceso mucho más seguro.</p>
+                </div>
+              </div>
+              <div class="tips__slider rounded-lg glide__slide">
+                <div class="top bg-blue-200 py-8"><img class="tips__icon pb-5" src="./src/images/icon-example.svg" alt=""/>
+                  <div class="title text-white text-secondary text-xl text-center leading-6">¿Conoces el pago <br> sin contacto?</div>
+                </div>
+                <div class="bottom bg-white pt-5 px-8 pb-24">
+                  <p class="font-light text-center text-sm"><strong>Paga más rápido, fácil y seguro. </strong> Para hacerlo solo debes acercar tu tarjeta al datáfono y ¡listo! Y lo mejor es lo puedes hacer tú mismo, no es necesario que le entregues tu tarjeta a nadie, lo que hace este proceso mucho más seguro.</p>
+                </div>
+              </div>
+            </div>
+            <div class="controls absolute w-full">
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--prev" data-glide-dir="&lt;"></button>
+                <button class="glide__arrow glide__arrow--next" data-glide-dir="&gt;"></button>
+              </div>
+              <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet bg-gray-500 rounded-full w-3 h-3 mx-1 hover:bg-blue-300" data-glide-dir="=0"></button>
+                <button class="glide__bullet bg-gray-500 rounded-full w-3 h-3 mx-1 hover:bg-blue-300" data-glide-dir="=1"></button>
+                <button class="glide__bullet bg-gray-500 rounded-full w-3 h-3 mx-1 hover:bg-blue-300" data-glide-dir="=2"></button>
+                <button class="glide__bullet bg-gray-500 rounded-full w-3 h-3 mx-1 hover:bg-blue-300" data-glide-dir="=3"></button>
+                <button class="glide__bullet bg-gray-500 rounded-full w-3 h-3 mx-1 hover:bg-blue-300" data-glide-dir="=4"></button>
+                <button class="glide__bullet bg-gray-500 rounded-full w-3 h-3 mx-1 hover:bg-blue-300" data-glide-dir="=5"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><img class="tips__bottom w-full" src="./src/images/border-detail-dark-bottom.svg"/>
+      <div class="max-w-screen-xl m-auto apps py-24 lg:pb-10 lg:flex">
+        <div class="lg:w-2/5 apps__content">
+          <h2 class="px-8 md:px-10 pb-10 lg:pb-5 text-center text-4xl text-blue-100">Tus apps favoritas</h2>
+          <p class="text-blue-200 font-light font-sm text-center m-auto w-9/12">Inscribe tus tarjetas en tus apps favoritas y así no tendrás que hacerlo cada que vayas a comprar y podrás disfrutar en cualquier momento películas, música y mucho más.</p>
+        </div>
+        <div class="apps__glide apps__items pt-20 lg:pt-4 lg:w-3/5">
+          <div class="glide__track" data-glide-el="track">
+            <div class="glide__slides">
+              <div class="app__item glide__slide"><img class="rounded-lg shadow-lg" src="./src/images/netflix.jpg" alt=""/></div>
+              <div class="app__item glide__slide"><img class="rounded-lg shadow-lg" src="./src/images/spotify.jpg" alt=""/></div>
+              <div class="app__item glide__slide"><img class="rounded-lg shadow-lg" src="./src/images/glovo.jpg" alt=""/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main><img class="footer__detail" src="src/images/footer-detail.svg" alt=""/>
+    <footer class="bg-blue-200">
+      <div class="max-w-screen-xl m-auto footer">
+        <ul class="footer__nav text-center lg:flex lg:justify-between lg:px-20">
+          <li><a href="">Inicio</a></li>
+          <li><a href="">¿Cómo ganar?</a></li>
+          <li><a href="">Redime tu premio</a></li>
+          <li><a href="">Preguntas frecuentes </a></li>
+          <li><a href="">Términos y condiciones</a></li>
+          <li><a href="">Contacto</a></li>
+        </ul>
+        <div class="footer__logos lg:flex justify-evenly">
+          <ul class="footer__social">
+            <li><a href=""><img src="src/images/facebook.svg" alt=""/></a></li>
+            <li><a href=""><img src="src/images/twitter.svg" alt=""/></a></li>
+            <li><a href=""><img src="src/images/instagram.svg" alt=""/></a></li>
+          </ul>
+          <ul class="footer__brands">
+            <li><a href=""><img src="src/images/master-card.svg" alt=""/></a></li>
+            <li><a href=""><img src="src/images/footer-bdp.svg" alt=""/></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script-dist.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+$gray-100: #5c5c5c;
+$blue-100: #009cde;
+$blue-200: #025fa6;
+$gray-background: #f7f7f7;
+$primary-font: "Roboto", sans-serif;
+$secondary-font: "Dosis", sans-serif;
+
+.text-blue-100 {
+  color: $blue-100;
+}
+
+.text-blue-200 {
+  color: $blue-200;
+}
+
+.text-secondary {
+  font-family: $secondary-font;
+}
+
+.bg-blue-200 {
+  background-color: $blue-200;
+}
+
+.bg-blue-100 {
+  background-color: $blue-100;
+}

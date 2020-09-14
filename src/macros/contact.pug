@@ -1,0 +1,24 @@
+.contact(class="terminos lg:max-w-md m-auto lg:bg-white lg:rounded-lg lg:mt-10 lg:mb-5 lg:shadow-md p-8")
+    form(action="")
+        h3.text-blue-100.text-xl.pb-10 Contacto
+        .contact__item
+            label(for="contact-name") Nombre
+            input(type="text" autofocus required placeholder="María" name="contact-name" id="contact-name")
+            span.text-red-600.text-xs Campo requerido
+        .contact__item
+            label(for="contact-last-name") Apellido
+            input(type="text" required placeholder="Rodriguez" name="contact-last-name" id="contact-last-name")
+        .contact__item
+            label(for="contact-email") Correo
+            input(type="email" required placeholder="Escribe tu correo" name="contact-email" id="contact-email")
+        .contact__item
+            label(for="contact-phone") Celular
+            input(type="tel" required placeholder="Escribe tu número de celular" name="contact-phoneel" id="contact-phone")
+        .contact__item
+            label(for="contact-message") Mensaje
+            textarea(name="contact-message" placeholder="Escribe tu mensaje" id="contact-message" cols="30" rows="2")
+        .text-center
+            button(type="submit" class="button button--dark text-white rounded-full text-center py-2 m-auto px-5 lg:px-10 md:px-8") Enviar
+        .log.text-center
+            p.text-green-600.text-xs.mt-2 Mensaje enviado con exito
+            p.text-red-600.text-xs.mt-2 Error XXXXXX

@@ -1,0 +1,379 @@
+.text-blue-100 {
+  color: #009cde;
+}
+
+.text-blue-200 {
+  color: #025fa6;
+}
+
+.text-secondary {
+  font-family: "Dosis", sans-serif;
+}
+
+.bg-blue-200 {
+  background-color: #025fa6;
+}
+
+.bg-blue-100 {
+  background-color: #009cde;
+}
+
+.glide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.glide__wrapper {
+  overflow: hidden;
+}
+
+.glide__track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  touch-action: pan-Y;
+  overflow: hidden;
+  padding: 0;
+}
+
+.glide__track.dragging {
+  cursor: grabbing;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.glide__slide {
+  width: 100%;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.glide__slide a {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.glide__arrows {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.glide__arrow {
+  cursor: pointer;
+}
+
+.glide__bullets {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.glide--slider .glide__slide {
+  float: left;
+  clear: none;
+}
+
+.glide--carousel.glide--vertical .glide__track {
+  overflow: visible;
+}
+
+.glide--carousel .glide__slide {
+  float: left;
+  clear: none;
+}
+
+.glide--slideshow .glide__wrapper {
+  height: 100%;
+}
+
+.glide--slideshow .glide__slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.glide--slideshow .glide__slide.active {
+  z-index: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  color: #5c5c5c;
+  overflow-x: hidden;
+  background-color: #f7f7f7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+}
+
+.header {
+  background-color: #009cde;
+}
+
+.button {
+  cursor: pointer;
+}
+.button--dark {
+  background-color: #025fa6;
+}
+.button--dark:hover {
+  background-color: #009cde;
+}
+.button:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.banner::after {
+  background-image: url("../images/border-detail.svg");
+  bottom: -2px;
+  content: "";
+  height: 64px;
+  position: absolute;
+  width: 100%;
+}
+.banner__content h1 {
+  color: #025fa6;
+}
+
+.logo {
+  bottom: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.logo img {
+  width: 90px;
+  height: 120px;
+}
+
+.tips {
+  background-color: #009cde;
+  top: -2px;
+}
+.tips__bottom {
+  position: relative;
+  top: -5px;
+}
+.tips__icon {
+  max-width: 112px;
+  margin: 0 auto;
+}
+.tips__slider {
+  overflow: hidden;
+  perspective: 1px;
+}
+
+.controls {
+  bottom: 5%;
+}
+.glide__arrow--prev, .glide__arrow--next {
+  background-image: url("../images/arrow.svg");
+  width: 14px;
+  height: 25px;
+  z-index: 2;
+}
+.glide__arrow--prev:hover, .glide__arrow--next:hover {
+  opacity: 0.7;
+}
+.glide__arrow--next {
+  transform: rotate(180deg);
+  position: absolute;
+  right: 1.5rem;
+}
+.glide__arrow--prev {
+  left: 1.5rem;
+  position: relative;
+}
+.glide__bullets {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 100%;
+}
+.glide__bullet--active {
+  background-color: #009cde;
+}
+
+.apps__items {
+  max-width: 500px;
+  margin: auto;
+}
+
+.app__item {
+  min-width: 160px;
+  height: 180px;
+}
+.app__item img {
+  width: 100%;
+}
+
+.footer__nav li {
+  color: white;
+  padding-bottom: 1.5rem;
+}
+.footer__nav li:hover {
+  opacity: 0.7;
+}
+
+.footer__social,
+.footer__brands {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.footer__social li,
+.footer__brands li {
+  padding: 0 1.5rem;
+}
+.footer__social li:hover,
+.footer__brands li:hover {
+  opacity: 0.7;
+}
+
+.footer__brands li:first-child {
+  position: relative;
+}
+.footer__brands li:first-child:after {
+  content: "";
+  width: 1px;
+  background-color: white;
+  opacity: 0.3;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer__detail {
+  position: relative;
+  top: 2px;
+  width: 100%;
+}
+
+.content p {
+  font-size: 0.875rem;
+  margin-bottom: 1.2rem;
+}
+
+.search {
+  position: relative;
+}
+.search input {
+  padding: 13px 40px;
+  font-size: 0.875rem;
+  width: 100%;
+}
+.search button {
+  width: 46px;
+  height: 46px;
+  background-color: #025fa6;
+  position: absolute;
+  right: 0;
+  top: 1px;
+}
+.search button img {
+  width: 17px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.preguntas .accordion,
+.preguntas .accordion__item {
+  position: relative;
+}
+.preguntas button {
+  background-color: #025fa6;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.preguntas button:hover {
+  background-color: #009cde;
+}
+.preguntas button img {
+  width: 17px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.accordion__item {
+  margin-top: 1.5rem;
+}
+.accordion__item button {
+  width: 29px;
+  height: 29px;
+  transform: translate(0, -50%) rotate(90deg);
+  right: 20px;
+}
+.accordion__item.expanded .hidden {
+  display: block;
+}
+.accordion__item.expanded button {
+  top: 5px;
+  transform: translate(0, 10px) rotate(0);
+}
+.accordion button img {
+  width: 20px;
+  pointer-events: none;
+}
+.accordion__title {
+  color: #009cde;
+  font-weight: bold;
+}
+
+.contact__item {
+  margin-bottom: 1.5rem;
+}
+.contact__item label,
+.contact__item input,
+.contact__item textarea {
+  display: block;
+  font-size: 0.875rem;
+  width: 100%;
+  background-color: transparent;
+}
+.contact__item input {
+  padding-bottom: 10px;
+}
+.contact__item input,
+.contact__item textarea {
+  border-bottom: 1px solid #5c5c5c;
+}
+.contact__item label {
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+}
