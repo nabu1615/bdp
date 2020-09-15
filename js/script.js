@@ -2,6 +2,7 @@ import Glide from "@glidejs/glide";
 
 const tips = document.querySelector(".tips__glide");
 const apps = document.querySelector(".apps__glide");
+const ganar = document.querySelector(".ganar__glide");
 
 // Tips Slider
 
@@ -30,6 +31,19 @@ if (apps) {
     animationDuration: 600,
     animationTimingFunc: "linear",
     perView: 3,
+    focusAt: 0,
+  }).mount();
+}
+
+// Ganar Slider
+
+if (ganar) {
+  new Glide(".ganar__glide", {
+    type: "carousel",
+    autoplay: 0,
+    animationDuration: 600,
+    animationTimingFunc: "linear",
+    perView: 1,
     focusAt: 0,
   }).mount();
 }

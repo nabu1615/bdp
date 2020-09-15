@@ -378,3 +378,8 @@ h5 {
   font-size: 0.875rem;
   margin-bottom: 10px;
 }
+
+.ganar {
+  background-color: #025fa6;
+  min-height: 280px;
+}
