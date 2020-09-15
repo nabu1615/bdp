@@ -11,6 +11,7 @@ html {
   color: $gray-100;
   overflow-x: hidden;
   background-color: $gray-background;
+  font-size: 18px;
 }
 
 h1,
@@ -317,7 +318,7 @@ h5 {
     }
 
     label {
-      font-size: 0.75rem;
+      font-size: 0.875rem;
       margin-bottom: 10px;
     }
   }

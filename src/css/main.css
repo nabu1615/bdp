@@ -7,7 +7,7 @@
 }
 
 .text-secondary {
-  font-family: "Dosis", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 
 .bg-blue-200 {
@@ -121,6 +121,7 @@ html {
   color: #5c5c5c;
   overflow-x: hidden;
   background-color: #f7f7f7;
+  font-size: 18px;
 }
 
 h1,
@@ -128,7 +129,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Dosis", sans-serif;
+  font-family: "Roboto Slab", serif;
   font-weight: bold;
 }
 
@@ -374,6 +375,6 @@ h5 {
   border-bottom: 1px solid #5c5c5c;
 }
 .contact__item label {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   margin-bottom: 10px;
 }
