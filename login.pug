@@ -1,0 +1,31 @@
+extends layout.pug
+
+block content
+   .login
+        .login__header.relative.mb-20
+            div(class="max-w-screen-lg px-8 m-auto lg:flex relative z-50 md:pb-10 lg:pt-10 lg:pb-20 lg:items-end")
+                h2(class="ganar__title text-4xl text-white mb-8 pt-12 lg:w-1/2 lg:inline-block leading-10") ¡A un clic de lo que quieres, a un clic de ganar!
+                p.text-white.text-lg.pb-20.font-hairline Usando tu tarjeta Mastercard PacifiCard Débito
+            img(alt="" src="src/images/border-detail-ganar.svg").w-full.absolute.bottom-0
+            .logo.inline-block.absolute.rounded-lg
+                img(src="./src/images/pacific.svg", alt="pacific")
+        div(class="login__content max-w-screen-lg m-auto relative mb-20 px-8 lg:flex")
+            div(class="lg:w-2/4 lg:pr-16")
+                h3.text-blue-100.text-xl.pb-10 Ingresa, selecciona el bono que quieres y redímelo.
+                p <strong>Digita el código que te enviamos por correo electrónico, </strong> si aún no lo tienes es probable que no hayas cumplido tu meta. ¡Anímate a hacerlo!
+            form(action="" class="lg:w-2/4 my-10")
+                .login__item
+                    label(for="login-code").font-bold Nombre
+                    input(type="text" autofocus required placeholder="Digita tu código" name="login-code" id="login-code")
+                    span.text-red-600.text-sm Campo requerido
+                .login__item.checkbox
+                    input(type="checkbox" id="login__recordar")
+                    label(for="login__recordar") Este es mi segundo checkbox
+                .login__item.checkbox
+                    input(type="checkbox" id="login__terms")
+                    label(for="terms") Acepto 
+                        a(href="#" title="términos y condiciones") términos y condiciones
+                .login__buttons.text-center.py-10
+                    button(type="submit" class="button button--dark text-white rounded-full text-center py-2 px-5 lg:px-10 md:px-8") Continuar
+                .login__buttons.text-center
+                    a(href="#") Cancelar

@@ -357,27 +357,57 @@ h5 {
   font-weight: bold;
 }
 
-.contact__item {
+.contact__item,
+.login__item {
   margin-bottom: 1.5rem;
 }
 .contact__item label,
 .contact__item input,
-.contact__item textarea {
+.contact__item textarea,
+.login__item label,
+.login__item input,
+.login__item textarea {
   display: block;
   font-size: 0.875rem;
   width: 100%;
   background-color: transparent;
 }
-.contact__item input {
-  padding-bottom: 10px;
+.contact__item.checkbox,
+.login__item.checkbox {
+  margin-bottom: 0;
 }
 .contact__item input,
-.contact__item textarea {
+.login__item input {
+  padding-bottom: 10px;
+}
+.contact__item input[type=checkbox],
+.login__item input[type=checkbox] {
+  display: inline-block;
+  width: 18px;
+}
+.contact__item input[type=checkbox] >,
+.login__item input[type=checkbox] > {
+  display: inline-block;
+}
+.contact__item input,
+.contact__item textarea,
+.login__item input,
+.login__item textarea {
   border-bottom: 1px solid #5c5c5c;
 }
-.contact__item label {
+.contact__item label,
+.login__item label {
   font-size: 0.875rem;
   margin-bottom: 10px;
+}
+
+.login label {
+  display: inline-block;
+  width: auto;
+}
+.login a {
+  color: #025fa6;
+  font-weight: bold;
 }
 
 .ganar {
@@ -395,8 +425,16 @@ h5 {
     margin-top: 30px;
   }
 }
+.ganar__title {
+  position: relative;
+  z-index: 999;
+}
 @media only screen and (min-width: 1024px) {
   .ganar .controls {
     bottom: -4vh;
   }
+}
+
+.login__header {
+  background-color: #025fa6;
 }

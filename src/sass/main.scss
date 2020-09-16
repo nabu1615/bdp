@@ -294,7 +294,8 @@ h5 {
   }
 }
 
-.contact {
+.contact,
+.login {
   &__item {
     margin-bottom: 1.5rem;
     label,
@@ -306,8 +307,21 @@ h5 {
       background-color: transparent;
     }
 
+    &.checkbox {
+      margin-bottom: 0;
+    }
+
     input {
       padding-bottom: 10px;
+    }
+
+    input[type="checkbox"] {
+      display: inline-block;
+      width: 18px;
+
+      & > {
+        display: inline-block;
+      }
     }
 
     input,
@@ -319,6 +333,18 @@ h5 {
       font-size: 0.875rem;
       margin-bottom: 10px;
     }
+  }
+}
+
+.login {
+  label {
+    display: inline-block;
+    width: auto;
+  }
+
+  a {
+    color: $blue-200;
+    font-weight: bold;
   }
 }
 
@@ -336,9 +362,20 @@ h5 {
     }
   }
 
+  &__title {
+    position: relative;
+    z-index: 999;
+  }
+
   .controls {
     @media only screen and (min-width: 1024px) {
       bottom: -4vh;
     }
+  }
+}
+
+.login {
+  &__header {
+    background-color: $blue-200;
   }
 }

@@ -14,37 +14,38 @@
       </div>
     </header>
     <main class="flex-grow">
-      <div class="contact terminos lg:max-w-md m-auto lg:bg-white lg:rounded-lg lg:mt-10 lg:mb-5 lg:shadow-md p-8">
-        <form action="">
-          <h3 class="text-blue-100 text-xl pb-10">Contacto</h3>
-          <div class="contact__item">
-            <label for="contact-name">Nombre</label>
-            <input type="text" autofocus="autofocus" required="required" placeholder="María" name="contact-name" id="contact-name"/><span class="text-red-600 text-sm">Campo requerido</span>
+      <div class="login">
+        <div class="login__header relative mb-20">
+          <div class="max-w-screen-lg px-8 m-auto lg:flex relative z-50 md:pb-10 lg:pt-10 lg:pb-20 lg:items-end">
+            <h2 class="ganar__title text-4xl text-white mb-8 pt-12 lg:w-1/2 lg:inline-block leading-10">¡A un clic de lo que quieres, a un clic de ganar!</h2>
+            <p class="text-white text-lg pb-20 font-hairline">Usando tu tarjeta Mastercard PacifiCard Débito</p>
+          </div><img class="w-full absolute bottom-0" alt="" src="src/images/border-detail-ganar.svg"/>
+          <div class="logo inline-block absolute rounded-lg"><img src="./src/images/pacific.svg" alt="pacific"/></div>
+        </div>
+        <div class="login__content max-w-screen-lg m-auto relative mb-20 px-8 lg:flex">
+          <div class="lg:w-2/4 lg:pr-16">
+            <h3 class="text-blue-100 text-xl pb-10">Ingresa, selecciona el bono que quieres y redímelo.</h3>
+            <p><strong>Digita el código que te enviamos por correo electrónico, </strong> si aún no lo tienes es probable que no hayas cumplido tu meta. ¡Anímate a hacerlo!</p>
           </div>
-          <div class="contact__item">
-            <label for="contact-last-name">Apellido</label>
-            <input type="text" required="required" placeholder="Rodriguez" name="contact-last-name" id="contact-last-name"/>
-          </div>
-          <div class="contact__item">
-            <label for="contact-email">Correo</label>
-            <input type="email" required="required" placeholder="Escribe tu correo" name="contact-email" id="contact-email"/>
-          </div>
-          <div class="contact__item">
-            <label for="contact-phone">Celular</label>
-            <input type="tel" required="required" placeholder="Escribe tu número de celular" name="contact-phoneel" id="contact-phone"/>
-          </div>
-          <div class="contact__item">
-            <label for="contact-message">Mensaje</label>
-            <textarea name="contact-message" placeholder="Escribe tu mensaje" id="contact-message" cols="30" rows="2"></textarea>
-          </div>
-          <div class="text-center">
-            <button class="button button--dark text-white rounded-full text-center py-2 m-auto px-5 lg:px-10 md:px-8" type="submit">Enviar</button>
-          </div>
-          <div class="log text-center">
-            <p class="text-green-600 text-sm mt-2">Mensaje enviado con exito</p>
-            <p class="text-red-600 text-sm mt-2">Error XXXXXX</p>
-          </div>
-        </form>
+          <form class="lg:w-2/4 my-10" action="">
+            <div class="login__item">
+              <label class="font-bold" for="login-code">Nombre</label>
+              <input type="text" autofocus="autofocus" required="required" placeholder="Digita tu código" name="login-code" id="login-code"/><span class="text-red-600 text-sm">Campo requerido</span>
+            </div>
+            <div class="login__item checkbox">
+              <input type="checkbox" id="login__recordar"/>
+              <label for="login__recordar">Este es mi segundo checkbox</label>
+            </div>
+            <div class="login__item checkbox">
+              <input type="checkbox" id="login__terms"/>
+              <label for="terms">Acepto <a href="#" title="términos y condiciones">términos y condiciones</a></label>
+            </div>
+            <div class="login__buttons text-center py-10">
+              <button class="button button--dark text-white rounded-full text-center py-2 px-5 lg:px-10 md:px-8" type="submit">Continuar</button>
+            </div>
+            <div class="login__buttons text-center"><a href="#">Cancelar</a></div>
+          </form>
+        </div>
       </div>
     </main><img class="footer__detail" src="src/images/footer-detail.svg" alt=""/>
     <footer class="bg-blue-200">
