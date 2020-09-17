@@ -1,0 +1,47 @@
+extends layout.pug
+
+block content
+   .modal
+      .modal__wrapper.bg-white.rounded-lg.shadow-lg.p-8
+         //- modal content number 1
+         div
+            .modal__content.pb-12
+               h3.text-blue-100.text-xl.pb-5.text-center ¿Quieres redimir este premio?
+               p.text-center Si quieres redimirlo, ingresa tu correo electrónico para enviarte la confirmación.
+            form.modal-form
+               .modal-form__item
+                  label(for="contact-email") Correo
+                  input(type="email" required placeholder="Escribe tu correo" name="contact-email" id="contact-email")
+            .modal-form__buttons.mt-12
+               .div(class="flex justify-evenly items-center")
+                  a.text-blue-100(href="") Cancelar
+                  button(type="submit" class="button button--dark text-white rounded-full py-2 px-5 lg:px-10 md:px-8") Redimir
+         //- modal content number 2
+         div.hidden
+            .modal__content.text-center
+               h3.text-blue-100.text-xl.pb-5.text-center Redención exitosa
+               p.text-center.pb-5 Código del bono:
+               p.pb-5.text-blue-200.font-bold.text-2xl 1234-5678-9098
+               p.pb-5 Vigencia hasta: XX-XX-XXXX
+               p.pb-5 Este código fue enviado al correo XXXX@gmail.com
+            .modal-form__buttons.mt-6
+               .div(class="flex justify-evenly items-center")
+                  a.text-blue-100(href="") Cancelar
+                  button(type="submit" class="button button--dark text-white rounded-full py-2 px-5 lg:px-10 md:px-8") Descargar PFD
+
+   .div(class="lg:max-w-xl m-auto catalogo-detalle p-8")
+      div(class="w-10/12 lg:w-9/12 catalogo-detalle__image m-auto relative")
+         img.m-auto.rounded-lg(src="src/images/netflix-catalogo.png", alt="")
+         div(class="w-10/12 lg:w-9/12 rounded-lg bg-blue-100 m-auto p-5  catalogo-detalle__content")
+            p.text-white.font-light.pb-1 Bono Netflix por <span>$50.000</span>
+            p.text-white.text-xs.font-light 250 Unidades disponibles
+      .accordion.mb-20.catalogo-detalle__accordion
+         include src/macros/catalogo-detalle-item.pug
+         include src/macros/catalogo-detalle-item.pug
+         include src/macros/catalogo-detalle-item.pug
+   .catalogo-detalle__buttons
+      .div(class="lg:max-w-xl m-auto catalogo-detalle p-8 flex justify-evenly")
+         a.text-blue-100(href="") Volver
+         button(type="submit" class="button button--dark text-white rounded-full py-2 px-5 lg:px-10 md:px-8") Redimir
+
+

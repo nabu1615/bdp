@@ -310,29 +310,11 @@ h5 {
   transform: translate(-50%, -50%);
 }
 
-.preguntas .accordion,
-.preguntas .accordion__item {
+.accordion {
   position: relative;
 }
-.preguntas button {
-  background-color: #025fa6;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-.preguntas button:hover {
-  background-color: #009cde;
-}
-.preguntas button img {
-  width: 17px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .accordion__item {
+  position: relative;
   margin-top: 1.5rem;
 }
 .accordion__item button {
@@ -340,6 +322,22 @@ h5 {
   height: 29px;
   transform: translate(0, -50%) rotate(90deg);
   right: 20px;
+}
+.accordion__item button {
+  background-color: #025fa6;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.accordion__item button:hover {
+  background-color: #009cde;
+}
+.accordion__item button img {
+  width: 17px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .accordion__item.expanded .hidden {
   display: block;
@@ -358,7 +356,8 @@ h5 {
 }
 
 .contact__item,
-.login__item {
+.login__item,
+.modal-form__item {
   margin-bottom: 1.5rem;
 }
 .contact__item label,
@@ -366,37 +365,47 @@ h5 {
 .contact__item textarea,
 .login__item label,
 .login__item input,
-.login__item textarea {
+.login__item textarea,
+.modal-form__item label,
+.modal-form__item input,
+.modal-form__item textarea {
   display: block;
   font-size: 0.875rem;
   width: 100%;
   background-color: transparent;
 }
 .contact__item.checkbox,
-.login__item.checkbox {
+.login__item.checkbox,
+.modal-form__item.checkbox {
   margin-bottom: 0;
 }
 .contact__item input,
-.login__item input {
+.login__item input,
+.modal-form__item input {
   padding-bottom: 10px;
 }
 .contact__item input[type=checkbox],
-.login__item input[type=checkbox] {
+.login__item input[type=checkbox],
+.modal-form__item input[type=checkbox] {
   display: inline-block;
   width: 18px;
 }
 .contact__item input[type=checkbox] >,
-.login__item input[type=checkbox] > {
+.login__item input[type=checkbox] >,
+.modal-form__item input[type=checkbox] > {
   display: inline-block;
 }
 .contact__item input,
 .contact__item textarea,
 .login__item input,
-.login__item textarea {
+.login__item textarea,
+.modal-form__item input,
+.modal-form__item textarea {
   border-bottom: 1px solid #5c5c5c;
 }
 .contact__item label,
-.login__item label {
+.login__item label,
+.modal-form__item label {
   font-size: 0.875rem;
   margin-bottom: 10px;
 }
@@ -437,4 +446,88 @@ h5 {
 
 .login__header {
   background-color: #025fa6;
+}
+
+.catalogo__more {
+  background-color: #025fa6;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.catalogo__more:hover {
+  background-color: #009cde;
+}
+.catalogo__item {
+  flex: 50%;
+}
+@media only screen and (min-width: 1024px) {
+  .catalogo__item {
+    flex: 33.33%;
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .catalogo__item:nth-child(3n) {
+    padding-right: 0 !important;
+  }
+}
+.catalogo__item:nth-child(odd) {
+  padding-right: 10px;
+}
+@media only screen and (min-width: 1024px) {
+  .catalogo__item:nth-child(odd) {
+    padding-right: 20px;
+  }
+}
+.catalogo__item:nth-child(even) {
+  padding-left: 10px;
+}
+@media only screen and (min-width: 1024px) {
+  .catalogo__item:nth-child(even) {
+    padding-left: 0;
+  }
+}
+.catalogo__wrapper {
+  border-radius: 40px;
+  border-collapse: separate;
+}
+.catalogo .item__image img {
+  border-radius: 40px;
+  border-collapse: separate;
+}
+.catalogo-detalle__content {
+  margin-top: -30px;
+  position: relative;
+}
+.catalogo-detalle__buttons {
+  border-top: 1px solid rgba(92, 92, 92, 0.2);
+  box-shadow: 0 0 0 white, 0px -2px 4px rgba(92, 92, 92, 0.2);
+}
+
+.modal {
+  position: relative;
+  z-index: 99;
+}
+.modal__wrapper {
+  min-width: 408px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
 }

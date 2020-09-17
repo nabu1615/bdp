@@ -1,0 +1,16 @@
+extends layout.pug
+
+block content
+   .catalogo.px-8.max-w-screen-lg.m-auto
+      h3.text-blue-100.text-xl.pb-5.pt-8 Contacto
+      p.pb-12 Elige el bono que más te gusta y redímelo
+      .catalogo__items.flex.flex-wrap.justify-between
+         include src/macros/catalogo-item.pug
+         include src/macros/catalogo-item.pug
+         include src/macros/catalogo-item.pug
+         include src/macros/catalogo-item.pug
+         include src/macros/catalogo-item.pug
+         include src/macros/catalogo-item.pug
+      p.text-sm.pb-20.pt-4 Al finalizar la campaña, sortearemos 5 bonos de SuperEasy de USD 300 entre las personas que hayan redimido un premio. ¡Redime y prepárate para ganar!
+
+

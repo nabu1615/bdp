@@ -232,41 +232,35 @@ h5 {
   }
 }
 
-.preguntas {
-  .accordion,
-  .accordion__item {
-    position: relative;
-  }
-
-  button {
-    background-color: $blue-200;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-
-    &:hover {
-      background-color: $blue-100;
-    }
-
-    img {
-      width: 17px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-}
-
 .accordion {
+  position: relative;
   &__item {
+    position: relative;
     margin-top: 1.5rem;
     button {
       width: 29px;
       height: 29px;
       transform: translate(0, -50%) rotate(90deg);
       right: 20px;
+    }
+
+    button {
+      background-color: $blue-200;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+
+      &:hover {
+        background-color: $blue-100;
+      }
+
+      img {
+        width: 17px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
 
     &.expanded {
@@ -295,7 +289,8 @@ h5 {
 }
 
 .contact,
-.login {
+.login,
+.modal-form {
   &__item {
     margin-bottom: 1.5rem;
     label,
@@ -377,5 +372,101 @@ h5 {
 .login {
   &__header {
     background-color: $blue-200;
+  }
+}
+
+.catalogo {
+  &__more {
+    background-color: $blue-200;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    &:hover {
+      background-color: $blue-100;
+    }
+  }
+
+  &__item {
+    flex: 50%;
+
+    @media only screen and (min-width: 1024px) {
+      flex: 33.33%;
+      padding-right: 20px;
+    }
+
+    &:nth-child(3n) {
+      @media only screen and (min-width: 1024px) {
+        padding-right: 0 !important;
+      }
+    }
+
+    &:nth-child(odd) {
+      padding-right: 10px;
+      @media only screen and (min-width: 1024px) {
+        padding-right: 20px;
+      }
+    }
+
+    &:nth-child(even) {
+      padding-left: 10px;
+      @media only screen and (min-width: 1024px) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__wrapper {
+    border-radius: 40px;
+    border-collapse: separate;
+  }
+
+  .item {
+    &__image img {
+      border-radius: 40px;
+      border-collapse: separate;
+    }
+  }
+
+  &-detalle {
+    &__content {
+      margin-top: -30px;
+      position: relative;
+    }
+
+    &__buttons {
+      border-top: 1px solid rgba($gray-100, 0.2);
+      box-shadow: 0 0 0 white, 0px -2px 4px rgba($gray-100, 0.2);
+    }
+  }
+}
+
+.modal {
+  position: relative;
+  z-index: 99;
+
+  &__wrapper {
+    min-width: 408px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(black, 0.6);
   }
 }
