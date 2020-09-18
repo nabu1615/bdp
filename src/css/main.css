@@ -419,7 +419,7 @@ h5 {
   }
 }
 
-h2.text-4xl.text-white.text-center.mb-12.pt-12 {
+.ganar__title {
   position: relative;
   z-index: 1;
 }
