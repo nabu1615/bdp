@@ -1,7 +1,9 @@
 $gray-100: #5c5c5c;
 $blue-100: #009cde;
 $blue-200: #025fa6;
+$blue-300: #122D98;
 $gray-background: #f7f7f7;
+$yellow-300: #ffce1f;
 $primary-font: "Roboto", sans-serif;
 $secondary-font: "Roboto Slab", serif;
 
@@ -11,6 +13,10 @@ $secondary-font: "Roboto Slab", serif;
 
 .text-blue-200 {
   color: $blue-200;
+}
+
+.text-blue-300 {
+  color: $blue-300;
 }
 
 .text-secondary {

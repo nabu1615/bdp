@@ -1,9 +1,14 @@
+@charset "UTF-8";
 .text-blue-100 {
   color: #009cde;
 }
 
 .text-blue-200 {
   color: #025fa6;
+}
+
+.text-blue-300 {
+  color: #122D98;
 }
 
 .text-secondary {
@@ -141,25 +146,25 @@ h5 {
   cursor: pointer;
 }
 .button--dark {
-  background-color: #025fa6;
+  background-color: #122D98;
 }
 .button--dark:hover {
-  background-color: #009cde;
+  background-color: #025fa6;
 }
 .button:hover {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .banner::after {
-  background-image: url("../images/border-detail.svg");
-  bottom: -2px;
+  background-image: url("../images/border-detail.png");
+  bottom: 0px;
   content: "";
   height: 64px;
   position: absolute;
   width: 100%;
 }
 .banner__content h1 {
-  color: #025fa6;
+  color: #122D98;
 }
 
 .logo {
@@ -177,6 +182,24 @@ h5 {
   background-color: #009cde;
   top: -2px;
 }
+.tips__content {
+  min-height: 300px;
+}
+@media (min-width: 767.98px) {
+  .tips__content {
+    min-height: 360px;
+  }
+}
+.tips__content ul li {
+  position: relative;
+}
+.tips__content ul li:after {
+  content: "•";
+  position: absolute;
+  left: -15px;
+  top: -10px;
+  font-size: 30px;
+}
 .tips__bottom {
   position: relative;
   top: -5px;
@@ -184,6 +207,9 @@ h5 {
 .tips__icon {
   max-width: 112px;
   margin: 0 auto;
+  min-height: 101.5px;
+  max-height: 101.5px;
+  object-fit: contain;
 }
 .tips__slider {
   overflow: hidden;
@@ -317,28 +343,6 @@ h5 {
   position: relative;
   margin-top: 1.5rem;
 }
-.accordion__item button {
-  width: 29px;
-  height: 29px;
-  transform: translate(0, -50%) rotate(90deg);
-  right: 20px;
-}
-.accordion__item button {
-  background-color: #025fa6;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-.accordion__item button:hover {
-  background-color: #009cde;
-}
-.accordion__item button img {
-  width: 17px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
 .accordion__item.expanded .hidden {
   display: block;
 }
@@ -346,8 +350,24 @@ h5 {
   top: 5px;
   transform: translate(0, 10px) rotate(0);
 }
+.accordion button {
+  background-color: #025fa6;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 29px;
+  height: 29px;
+  transform: translate(0, -50%) rotate(90deg);
+}
+.accordion button:hover {
+  background-color: #009cde;
+}
 .accordion button img {
-  width: 20px;
+  width: 17px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   pointer-events: none;
 }
 .accordion__title {
@@ -355,68 +375,27 @@ h5 {
   font-weight: bold;
 }
 
-.contact__item,
-.login__item,
-.modal-form__item {
+.contact__item {
   margin-bottom: 1.5rem;
 }
 .contact__item label,
 .contact__item input,
-.contact__item textarea,
-.login__item label,
-.login__item input,
-.login__item textarea,
-.modal-form__item label,
-.modal-form__item input,
-.modal-form__item textarea {
+.contact__item textarea {
   display: block;
   font-size: 0.875rem;
   width: 100%;
   background-color: transparent;
 }
-.contact__item.checkbox,
-.login__item.checkbox,
-.modal-form__item.checkbox {
-  margin-bottom: 0;
-}
-.contact__item input,
-.login__item input,
-.modal-form__item input {
+.contact__item input {
   padding-bottom: 10px;
 }
-.contact__item input[type=checkbox],
-.login__item input[type=checkbox],
-.modal-form__item input[type=checkbox] {
-  display: inline-block;
-  width: 18px;
-}
-.contact__item input[type=checkbox] >,
-.login__item input[type=checkbox] >,
-.modal-form__item input[type=checkbox] > {
-  display: inline-block;
-}
 .contact__item input,
-.contact__item textarea,
-.login__item input,
-.login__item textarea,
-.modal-form__item input,
-.modal-form__item textarea {
+.contact__item textarea {
   border-bottom: 1px solid #5c5c5c;
 }
-.contact__item label,
-.login__item label,
-.modal-form__item label {
+.contact__item label {
   font-size: 0.875rem;
   margin-bottom: 10px;
-}
-
-.login label {
-  display: inline-block;
-  width: auto;
-}
-.login a {
-  color: #025fa6;
-  font-weight: bold;
 }
 
 .ganar {
@@ -434,18 +413,29 @@ h5 {
     margin-top: 30px;
   }
 }
-.ganar__title {
-  position: relative;
-  z-index: 999;
-}
 @media only screen and (min-width: 1024px) {
   .ganar .controls {
     bottom: -4vh;
   }
 }
 
-.login__header {
-  background-color: #025fa6;
+h2.text-4xl.text-white.text-center.mb-12.pt-12 {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-yellow {
+  background-color: #ffce1f;
+  color: #025fa6;
+}
+
+.glide__track {
+  border-radius: 0.5rem;
+}
+
+.apps__items {
+  height: 265px !important;
+  overflow-y: hidden;
 }
 
 .catalogo__more {

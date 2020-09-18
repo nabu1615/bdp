@@ -30,10 +30,10 @@ h5 {
 .button {
   cursor: pointer;
   &--dark {
-    background-color: $blue-200;
+    background-color: $blue-300;
 
     &:hover {
-      background-color: $blue-100;
+      background-color: $blue-200;
     }
   }
 
@@ -45,8 +45,8 @@ h5 {
 
 .banner {
   &::after {
-    background-image: url("../images/border-detail.svg");
-    bottom: -2px;
+    background-image: url("../images/border-detail.png");
+    bottom: 0px;
     content: "";
     height: 64px;
     position: absolute;
@@ -55,7 +55,7 @@ h5 {
 
   &__content {
     h1 {
-      color: $blue-200;
+      color: $blue-300;
     }
   }
 }
@@ -76,6 +76,23 @@ h5 {
   background-color: $blue-100;
   top: -2px;
 
+  &__content {
+    min-height: 300px;
+    @media (min-width: 767.98px) {
+      min-height: 360px;
+    }
+    ul li {
+      position: relative;
+      &:after {
+        content: "•";
+        position: absolute;
+        left: -15px;
+        top: -10px;
+        font-size: 30px;
+      }
+    }
+  }
+
   &__bottom {
     position: relative;
     top: -5px;
@@ -84,6 +101,9 @@ h5 {
   &__icon {
     max-width: 112px;
     margin: 0 auto;
+    min-height: 101.5px;
+    max-height: 101.5px;
+    object-fit: contain;
   }
 
   &__slider {
@@ -237,31 +257,6 @@ h5 {
   &__item {
     position: relative;
     margin-top: 1.5rem;
-    button {
-      width: 29px;
-      height: 29px;
-      transform: translate(0, -50%) rotate(90deg);
-      right: 20px;
-    }
-
-    button {
-      background-color: $blue-200;
-      position: absolute;
-      top: 50%;
-      transform: translate(0, -50%);
-
-      &:hover {
-        background-color: $blue-100;
-      }
-
-      img {
-        width: 17px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
 
     &.expanded {
       .hidden {
@@ -276,8 +271,24 @@ h5 {
   }
 
   button {
+    background-color: $blue-200;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 29px;
+    height: 29px;
+    transform: translate(0, -50%) rotate(90deg);
+
+    &:hover {
+      background-color: $blue-100;
+    }
+
     img {
-      width: 20px;
+      width: 17px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
       pointer-events: none;
     }
   }
@@ -288,9 +299,7 @@ h5 {
   }
 }
 
-.contact,
-.login,
-.modal-form {
+.contact {
   &__item {
     margin-bottom: 1.5rem;
     label,
@@ -302,21 +311,8 @@ h5 {
       background-color: transparent;
     }
 
-    &.checkbox {
-      margin-bottom: 0;
-    }
-
     input {
       padding-bottom: 10px;
-    }
-
-    input[type="checkbox"] {
-      display: inline-block;
-      width: 18px;
-
-      & > {
-        display: inline-block;
-      }
     }
 
     input,
@@ -328,18 +324,6 @@ h5 {
       font-size: 0.875rem;
       margin-bottom: 10px;
     }
-  }
-}
-
-.login {
-  label {
-    display: inline-block;
-    width: auto;
-  }
-
-  a {
-    color: $blue-200;
-    font-weight: bold;
   }
 }
 
@@ -357,11 +341,6 @@ h5 {
     }
   }
 
-  &__title {
-    position: relative;
-    z-index: 999;
-  }
-
   .controls {
     @media only screen and (min-width: 1024px) {
       bottom: -4vh;
@@ -369,10 +348,23 @@ h5 {
   }
 }
 
-.login {
-  &__header {
-    background-color: $blue-200;
-  }
+h2.text-4xl.text-white.text-center.mb-12.pt-12 {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-yellow {
+  background-color: $yellow-300;
+  color: $blue-200;
+}
+
+.glide__track {
+  border-radius: 0.5rem;
+}
+
+.apps__items {
+  height: 265px !important;
+  overflow-y: hidden;
 }
 
 .catalogo {
