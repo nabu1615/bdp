@@ -51,9 +51,14 @@ if (ganar) {
 // Accordion
 
 const accordionButtons = document.querySelectorAll(".accordion__button");
+const catalogoAccordion = document.querySelector(
+  ".catalogo-detalle__accordion"
+);
 
 accordionButtons.forEach((item) => {
   item.addEventListener("click", (e) => {
     e.target.parentElement.classList.toggle("expanded");
   });
 });
+
+catalogoAccordion.querySelector(".accordion__item").classList.add("expanded");
