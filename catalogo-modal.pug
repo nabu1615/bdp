@@ -1,6 +1,20 @@
 extends layout.pug
 
 block content
+   .modal
+      .modal__wrapper.bg-white.rounded-lg.shadow-lg.p-8
+        .modal__content.pb-12
+            h3.text-blue-100.text-xl.pb-5.text-center ¿Quieres redimir este premio?
+            p.text-center Si quieres redimirlo, ingresa tu correo electrónico para enviarte la confirmación.
+        form.modal-form
+            .modal-form__item
+                label(for="contact-email") Correo
+                input(type="email" required placeholder="Escribe tu correo" name="contact-email" id="contact-email")
+        .modal-form__buttons.mt-12
+            .div(class="flex justify-evenly items-center")
+                a.text-blue-100(href="") Cancelar
+                button(type="submit" class="button button--dark text-white rounded-full py-2 px-5 lg:px-10 md:px-8") Redimir
+
    .div(class="lg:max-w-xl m-auto catalogo-detalle p-8")
       div(class="w-10/12 lg:w-9/12 catalogo-detalle__image m-auto relative")
          img.m-auto.rounded-lg(src="src/images/netflix-catalogo.png", alt="")
