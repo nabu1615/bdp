@@ -299,9 +299,41 @@ h5 {
   }
 }
 
-.contact {
+.login {
+  label {
+    display: inline-block;
+    width: auto;
+  }
+
+  &__header {
+    background-color: $blue-200;
+  }
+
+  a {
+    color: $blue-200;
+    font-weight: bold;
+  }
+}
+
+.contact,
+.login,
+.modal-form {
   &__item {
     margin-bottom: 1.5rem;
+
+    &.checkbox {
+      margin-bottom: 0;
+      label {
+        display: inline-block;
+        width: auto;
+      }
+    }
+
+    input[type="checkbox"] {
+      display: inline-block;
+      width: 18px;
+    }
+
     label,
     input,
     textarea {
@@ -331,6 +363,11 @@ h5 {
   background-color: $blue-200;
   min-height: 280px;
 
+  &__title {
+    position: relative;
+    z-index: 999;
+  }
+
   &__glide {
     margin-bottom: 200px;
     position: relative;
@@ -346,11 +383,6 @@ h5 {
       bottom: -4vh;
     }
   }
-}
-
-.ganar__title {
-  position: relative;
-  z-index: 1;
 }
 
 .bg-yellow {

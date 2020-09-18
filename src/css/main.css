@@ -375,25 +375,70 @@ h5 {
   font-weight: bold;
 }
 
-.contact__item {
+.login label {
+  display: inline-block;
+  width: auto;
+}
+.login__header {
+  background-color: #025fa6;
+}
+.login a {
+  color: #025fa6;
+  font-weight: bold;
+}
+
+.contact__item,
+.login__item,
+.modal-form__item {
   margin-bottom: 1.5rem;
+}
+.contact__item.checkbox,
+.login__item.checkbox,
+.modal-form__item.checkbox {
+  margin-bottom: 0;
+}
+.contact__item.checkbox label,
+.login__item.checkbox label,
+.modal-form__item.checkbox label {
+  display: inline-block;
+  width: auto;
+}
+.contact__item input[type=checkbox],
+.login__item input[type=checkbox],
+.modal-form__item input[type=checkbox] {
+  display: inline-block;
+  width: 18px;
 }
 .contact__item label,
 .contact__item input,
-.contact__item textarea {
+.contact__item textarea,
+.login__item label,
+.login__item input,
+.login__item textarea,
+.modal-form__item label,
+.modal-form__item input,
+.modal-form__item textarea {
   display: block;
   font-size: 0.875rem;
   width: 100%;
   background-color: transparent;
 }
-.contact__item input {
+.contact__item input,
+.login__item input,
+.modal-form__item input {
   padding-bottom: 10px;
 }
 .contact__item input,
-.contact__item textarea {
+.contact__item textarea,
+.login__item input,
+.login__item textarea,
+.modal-form__item input,
+.modal-form__item textarea {
   border-bottom: 1px solid #5c5c5c;
 }
-.contact__item label {
+.contact__item label,
+.login__item label,
+.modal-form__item label {
   font-size: 0.875rem;
   margin-bottom: 10px;
 }
@@ -401,6 +446,10 @@ h5 {
 .ganar {
   background-color: #025fa6;
   min-height: 280px;
+}
+.ganar__title {
+  position: relative;
+  z-index: 999;
 }
 .ganar__glide {
   margin-bottom: 200px;
@@ -417,11 +466,6 @@ h5 {
   .ganar .controls {
     bottom: -4vh;
   }
-}
-
-.ganar__title {
-  position: relative;
-  z-index: 1;
 }
 
 .bg-yellow {
