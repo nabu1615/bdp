@@ -62,3 +62,13 @@ accordionButtons.forEach((item) => {
 });
 
 catalogoAccordion.querySelector(".accordion__item").classList.add("expanded");
+
+const closeModal = document.querySelector('.modal__close');
+
+closeModal.addEventListener("click", (e) => {
+  document.querySelector('.modal').close();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === 'Escape') document.querySelector('.modal').close();
+})

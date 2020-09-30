@@ -1,9 +1,10 @@
 extends layout.pug
 
 block content
-   .modal
+   dialog(open).modal
       .modal__wrapper.bg-white.rounded-lg.shadow-lg.p-8
         .modal__content.pb-12
+            span.modal__close x
             h3.text-blue-100.text-xl.pb-5.text-center ¿Quieres redimir este premio?
             p.text-center Si quieres redimirlo, ingresa tu correo electrónico para enviarte la confirmación.
         form.modal-form

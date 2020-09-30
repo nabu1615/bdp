@@ -476,6 +476,18 @@ h5 {
   position: relative;
   z-index: 99;
 
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    &:hover {
+      color: $blue-100;
+    }
+  }
+
   &__wrapper {
     min-width: 408px;
     position: fixed;
